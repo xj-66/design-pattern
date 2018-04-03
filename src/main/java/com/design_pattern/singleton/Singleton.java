@@ -3,8 +3,12 @@ package com.design_pattern.singleton;
 import java.time.LocalDate;
 
 /**
- * 单例模式Singleton 场景：全局只有一个实例 作用：保证全局只有一个实例 类型：饿汉模式、懒汉模式
+ * 单例模式Singleton 
+ * 场景：全局只有一个实例 
+ * 作用：保证全局只有一个实例 
+ * 类型：饿汉模式、懒汉模式
  * 
+ * 饿汉模式
  * @author coffee
  */
 public class Singleton {
