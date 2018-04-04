@@ -19,8 +19,8 @@ public class AdapterTest {
 		// 组合方式实现
 		Target adapter = new Adapter(adaptee);
 
-		Executer Executer = new Executer(adapter);
-		Executer.execute();
+		Client client = new Client(adapter);
+		client.execute();
 	}
 
 	@Test
@@ -29,7 +29,7 @@ public class AdapterTest {
 		// 继承方式实现
 		Target adapter = new AdapterExtented();
 
-		Executer Executer = new Executer(adapter);
-		Executer.execute();
+		Client client = new Client(adapter);
+		client.execute();
 	}
 }

@@ -7,15 +7,15 @@ package com.design_pattern.adapter;
  * @author coffee
  *
  */
-public class Executer {
+public class Client {
 
 	private Target target;
 
-	public Executer() {
+	public Client() {
 
 	}
 
-	public Executer(Target target) {
+	public Client(Target target) {
 		this.target = target;
 	}
 
