@@ -19,7 +19,7 @@ public class Singleton2 {
 
 	//提供一个用于获取实例的方法，公有静态
 	public static Singleton2 getInstanse() {
-		if (instance == null) { // 2021年1月10日21:14:03
+		if (instance == null) {
 			synchronized (Singleton2.class) {
 				if (instance == null) {
 					instance = new Singleton2();
