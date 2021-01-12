@@ -18,7 +18,7 @@ public class BeverageTest {
 		beverage1 = new Whip(beverage1);// 奶泡
 		printInfo(beverage1);
 
-		// 来一个套娃写法，专业动作，请勿模仿
+		// 来一个套娃写法，危险动作，请勿模仿
 		Beverage beverage2 = new Whip(new Mocha(new Soy(new HouseBlend())));
 		printInfo(beverage2);
 	}
