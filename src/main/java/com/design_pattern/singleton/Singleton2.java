@@ -29,7 +29,7 @@ public class Singleton2 {
 		return instance;
 	}
 
-	public LocalDate getDate() throws Exception {
-		return LocalDate.now();
+	public String sayHello() throws Exception {
+		return LocalDate.now() + " - hello";
 	}
 }

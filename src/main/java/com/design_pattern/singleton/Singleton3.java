@@ -24,7 +24,7 @@ public class Singleton3 {
 		return create.INSTANCE;
 	}
 
-	public LocalDate getDate() throws Exception {
-		return LocalDate.now();
+	public String sayHello() throws Exception {
+		return LocalDate.now() + " - hello";
 	}
 }

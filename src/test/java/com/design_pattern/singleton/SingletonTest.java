@@ -10,10 +10,9 @@ public class SingletonTest {
 	@Test
 	public void test() {
 		try {
-			LocalDate date = Singleton.getInstanse().getDate();
-			Assert.assertEquals(date, LocalDate.now());
+			String s = Singleton.getInstanse().sayHello();
+			System.out.println(s);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -21,10 +20,8 @@ public class SingletonTest {
 	@Test
 	public void test2() {
 		try {
-			LocalDate date = Singleton2.getInstanse().getDate();
-			Assert.assertEquals(date, LocalDate.now());
+			Singleton2.getInstanse().sayHello();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -32,12 +29,9 @@ public class SingletonTest {
 	@Test
 	public void test3() {
 		try {
-			LocalDate date = Singleton3.getInstanse().getDate();
-			Assert.assertEquals(date, LocalDate.now());
+			Singleton3.getInstanse().sayHello();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-
 }

@@ -15,18 +15,17 @@ public class Singleton {
 
 	// 构造方法私有化，保证单例
 	private Singleton() {
-
 	}
 
 	// 自己创建一个实例，私有静态
 	private static Singleton instance = new Singleton();
 
-	// 提供一个用于获取实例的方法，公有静态
+	// 全局访问点
 	public static Singleton getInstanse() {
 		return instance;
 	}
 
-	public LocalDate getDate() throws Exception {
-		return LocalDate.now();
+	public String sayHello() throws Exception {
+		return LocalDate.now() + " - hello";
 	}
 }
